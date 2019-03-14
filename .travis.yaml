@@ -1,0 +1,16 @@
+go_import_path: github.com/smallinsky/trafficshaper
+
+language: go
+
+go:
+- 1.11.x
+- master
+
+os:
+  - linux
+  - osx
+
+script:
+    go test -race ./...
+
+sudo: false
